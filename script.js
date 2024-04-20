@@ -12,15 +12,16 @@ class Animal {
 }
 
 class Cat extends Animal {
-	purr() {
-		console.log("purr")
-	}
+	const myCat = new Cat("Siamese");
+myCat.makeSound(); // Output: The Siamese makes a sound
+myCat.purr(); // Output: purr
+
 }
 
 class Dog extends Animal {
-	bark() {
-		console.log("woof")
-	}
+	const myDog = new Dog("Golden Retriever");
+myDog.makeSound(); // Output: The Golden Retriever makes a sound
+myDog.bark(); // Output: woof
 }
 
 
