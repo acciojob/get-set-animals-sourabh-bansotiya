@@ -4,10 +4,16 @@ class Animal {
 		this._species = species;
 	}
 	get species(){
-		return this.species;
+		return this._species;
 		}
 	makeSound() {
-			console.log("Animal sound");
+			console.log(this._species + "makes sound");
+	}
+}
+
+class Cat extends Animal {
+	purr() {
+		console.log("purr")
 	}
 }
 
@@ -17,11 +23,7 @@ class Dog extends Animal {
 	}
 }
 
-class Cat extends Animal {
-	purr() {
-		console.log("purr")
-	}
-}
+
 
 // Do not change the code below this line
 window.Animal = Animal;
