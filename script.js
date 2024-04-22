@@ -13,13 +13,13 @@ class Animal {
 
 class Cat extends Animal {
 	purr(){
-		console.log("purr");
+		console.log(`The ${this.species} makes sound purr`);
 	}
 }
 
 class Dog extends Animal {
 	bark(){
-		console.log("woof");
+		console.log(`The ${this.species} makes sound woof`);
 	}
 }
 
